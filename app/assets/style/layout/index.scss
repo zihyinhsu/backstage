@@ -1,3 +1,7 @@
+.sidebar{
+  min-height: 100vh;
+}
+
 
 .userProfile{
   .avatar{
@@ -24,6 +28,6 @@
   position: absolute;
   left: 0;
   width: 4px;
-  height: 32px;
+  height: 24px;
   border-left: 4px solid #198754;
 }
