@@ -5,18 +5,18 @@
 
 // Color system
 
+//mixin
 
-// mixin
-@mixin size($w,$h){
-  width: $w;
-  height: $h;
-}   
+// @include size($w,$h){
+//   width:$w ;
+//   height: $h;
+// }
 
-@mixin img{
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// @include img{
+//   background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
