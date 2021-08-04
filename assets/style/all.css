@@ -11567,7 +11567,6 @@ fieldset:disabled .btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  outline: solid 1px;
 }
 
 body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h5, body .h5, body p {
@@ -11614,6 +11613,10 @@ img {
   font-size: 24px;
 }
 
+.sidebar {
+  min-height: 100vh;
+}
+
 .userProfile .avatar img {
   width: 40px;
   height: 40px;
@@ -11635,7 +11638,7 @@ img {
   position: absolute;
   left: 0;
   width: 4px;
-  height: 32px;
+  height: 24px;
   border-left: 4px solid #198754;
 }
 
