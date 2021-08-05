@@ -1,0 +1,40 @@
+
+.sidebar{
+    min-height: 100vh;
+  }
+  
+.userProfile{
+  .avatar{
+    img{
+    @include size(40px,40px);
+    @include img;
+    }
+  }
+  .email{
+    font-size: 14px;
+    color:#6C757D;
+  }
+}
+  
+  .nav-link{
+    padding: 12px 0 12px 32px ;
+    position: relative;
+  }
+  .nav-link.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 24px;
+    border-left: 4px solid #198754;
+  }
+
+  .ckeditor{
+    top: 480px;
+    right: 30px;
+    width: 508px;
+    z-index: 1; 
+    .ck-editor__editable {
+      min-height: 320px;
+    }
+  }

@@ -8,6 +8,7 @@
     <title><%- title %></title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
@@ -16,9 +17,9 @@
   <body>
     <div class="backstage d-flex ">
       <div class="sidebar w-25 bg-light">
-        <div class="container h-100 d-flex flex-column justify-content-between">
+        <div class="h-100 d-flex flex-column justify-content-between">
           <div class="wrap">
-          <img class="w-100 mb-4" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg" alt="answer">
+          <img class="container" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg" alt="answer">
           <nav class="nav flex-column">
             <a class="nav-link d-flex link-success active" aria-current="page" href="#">
               <span class="material-icons me-4">insert_chart</span>
@@ -47,7 +48,7 @@
           </nav>
       
           </div>
-          <div class="userProfile d-flex align-items-center">
+          <div class="container userProfile d-flex align-items-center">
             <div class="avatar me-3">
               <img class="rounded-circle" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="">
             </div>
@@ -64,9 +65,17 @@
     <%- contents %>
 
    </div>
-
+    <script>
+      ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+        console.log( editor );
+      } )
+        .catch( error => {
+        console.error( error );
+      } );
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>

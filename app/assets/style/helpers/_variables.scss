@@ -5,19 +5,6 @@
 
 // Color system
 
-//mixin
-
-// @include size($w,$h){
-//   width:$w ;
-//   height: $h;
-// }
-
-// @include img{
-//   background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
-
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -80,7 +67,7 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
+$primary:       $gray-100 !default; // $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
