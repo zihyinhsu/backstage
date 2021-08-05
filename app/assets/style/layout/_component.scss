@@ -1,8 +1,9 @@
-
+//sidebar
 .sidebar{
     min-height: 100vh;
   }
-  
+
+//個人頭像與資料  
 .userProfile{
   .avatar{
     img{
@@ -16,6 +17,7 @@
   }
 }
   
+//nav
   .nav-link{
     padding: 12px 0 12px 32px ;
     position: relative;
@@ -29,12 +31,76 @@
     border-left: 4px solid #198754;
   }
 
+//ck-editor
   .ckeditor{
     top: 480px;
     right: 30px;
     width: 508px;
     z-index: 1; 
     .ck-editor__editable {
-      min-height: 320px;
+      min-height: 340px;
     }
   }
+
+.editorBtnPosition{
+  bottom:32px;
+  right: 32px;
+} 
+
+//表格
+tr{
+  td{
+    height: 20%;
+  }
+}
+//pagination
+.pagination{
+  .pagActive{
+    background-color:  $success;
+    color: $light;
+  }
+  .page-link:hover{
+    background-color: $success;
+    color: $light;
+  }
+}
+
+.btn-outline-gray-400{
+  border: solid 1px $gray-400;
+  color: $gray-400;
+  &:hover{
+    background-color: $gray-400;
+    color: $dark;
+  }
+}
+
+.list-group {
+  .active{
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+
+
+
+//collapse-expandmore
+.expand_more {
+  display: none;
+}
+.expand_less {
+  display: inline-block;
+}
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
+}
+
+//memberpic
+.memberpic{
+  height:180px;
+}
+
