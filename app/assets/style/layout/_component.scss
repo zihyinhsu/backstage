@@ -47,12 +47,6 @@
   right: 32px;
 } 
 
-//表格
-tr{
-  td{
-    height: 20%;
-  }
-}
 //pagination
 .pagination{
   .pagActive{
@@ -65,6 +59,7 @@ tr{
   }
 }
 
+// btn
 .btn-outline-gray-400{
   border: solid 1px $gray-400;
   color: $gray-400;
@@ -74,29 +69,12 @@ tr{
   }
 }
 
+// blist-group
 .list-group {
   .active{
     background-color: $light;
     color: $dark;
   }
-}
-
-
-
-
-//collapse-expandmore
-.expand_more {
-  display: none;
-}
-.expand_less {
-  display: inline-block;
-}
-.collapsed .expand_more {
-  display: inline-block;
-}
-
-.collapsed .expand_less {
-  display: none;
 }
 
 //memberpic
