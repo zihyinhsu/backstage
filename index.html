@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="backstage d-flex ">
+      <div class="sidebar w-25 bg-light">
+        <div class="h-100 d-flex flex-column justify-content-between">
+          <div class="wrap">
+          <img class="container" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg" alt="answer">
+          <nav class="nav flex-column">
+            <a class="nav-link d-flex link-dark fw-bold" aria-current="page" href="#">
+              <span class="material-icons me-4">insert_chart</span>
+              <p>Dashboard</p>
+            </a>
+            <a class="nav-link d-flex link-dark fw-bold " href="#">
+              <span class="material-icons me-4">question_answer</span>
+            <p>Question</p>
+            </a>
+            <a class="nav-link d-flex link-success fw-bold active" href="assignment.html">
+              <span class="material-icons me-4">assignment</span>
+            <p>Assignment</p>
+            </a>
+            <a class="nav-link d-flex link-dark fw-bold" href="#" tabindex="-1" aria-disabled="true">
+              <span class="material-icons me-4">video_library</span>
+            <p>Course</p>
+            </a>
+            <a class="nav-link d-flex link-dark fw-bold" href="admin.html" tabindex="-1" aria-disabled="true">
+              <span class="material-icons me-4">people</span>
+              <p>Admin</p>
+            </a>
+            <a class="nav-link d-flex link-dark fw-bold" href="#" tabindex="-1" aria-disabled="true">
+              <span class="material-icons me-4">settings</span>
+            <p>Settings</p>
+            </a>
+          </nav>
+      
+          </div>
+          <div class="container userProfile d-flex align-items-center">
+            <div class="avatar me-3">
+              <img class="rounded-circle" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="">
+            </div>
+            <div class="personal">
+              <p  class="fw-bold">Andy Chen</p>
+              <p class="email">andy0401@mail.com</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      
+    
+
+    
+
+   </div>
+    <script>
+      ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+        console.log( editor );
+      } )
+        .catch( error => {
+        console.error( error );
+      } );
+    </script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
