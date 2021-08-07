@@ -11666,9 +11666,9 @@ img {
 }
 
 .ckeditor {
-  top: 480px;
-  right: 30px;
-  width: 508px;
+  bottom: 50px;
+  right: 0px;
+  width: 505px;
   z-index: 1;
 }
 

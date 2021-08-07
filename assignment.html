@@ -154,7 +154,7 @@
              <!-- 右卡片 -->
           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
 
-            <div class="card w-100">
+            <div class="card ">
               <div class="card-header d-flex">
                 <div class="w-100">
                   <h5 class="mb-1 fz-0-5">Chapter Assignment 1</h5>
@@ -210,9 +210,24 @@
         </div>
           <!-- 右卡片結束 --> 
           </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body"></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <div class="card">
+              <div class="card-header"></div>
+              <div class="card-body"></div>
+            </div>
+          </div>
         </div>
         <!-- < > -->
         <div class="d-flex mt-3 justify-content-between">
@@ -225,12 +240,22 @@
             </a>
           </div>
           <!-- reply -->
+        <div class="reply position-relative">
+          <p>
+            <a class="btn btn-outline-success py-1 px-4" >
+              Mark as read
+            </a>
+            <button class="btn btn-success py-1 px-4 ms-3 me-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Reply
+            </button>
+          </p>
+
           <div class="collapse" id="collapseExample">
             <div class="card card-body position-absolute ckeditor">
                <!-- ckeditor -->
                <div id="editor" class="editor h-100" >This is some sample content.</div>
                <!-- ckeditor -->
-               <!-- reply button -->
+               <!-- reply/cancel button -->
                <div class="reply position-absolute editorBtnPosition">
                 <p>
                   <a class="btn btn-outline-success py-1 px-4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-dismiss="modal">
@@ -244,16 +269,6 @@
               <!-- reply button -->
             </div>
           </div>
-
-          <div class="reply position-relative">
-          <p>
-            <a class="btn btn-outline-success py-1 px-4" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Mark as read
-            </a>
-            <button class="btn btn-success py-1 px-4 ms-3 me-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Reply
-            </button>
-          </p>
         </div>
           
           <!-- reply -->
