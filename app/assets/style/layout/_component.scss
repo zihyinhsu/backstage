@@ -90,3 +90,15 @@
   .accordion-button:focus {
     box-shadow: none;
   }
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+//form-select
+.form-select{
+  cursor: pointer ;
+  border:none;
+  &:focus{
+    box-shadow: none;
+  }
+}
