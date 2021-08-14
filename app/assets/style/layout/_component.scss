@@ -9,6 +9,8 @@
     img{
     @include size(40px,40px);
     @include img;
+    // 避免圖片變形
+    object-fit :cover;
     }
   }
   .email{
@@ -33,12 +35,12 @@
 
 //ck-editor
   .ckeditor{
-    bottom: 50px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     width: 505px;
     z-index: 1; 
     .ck-editor__editable {
-      min-height: 340px;
+      min-height: 305px;
     }
   }
 
@@ -69,7 +71,7 @@
   }
 }
 
-// blist-group
+// list-group
 .list-group {
   .active{
     background-color: $light;
@@ -79,6 +81,12 @@
 
 //memberpic
 .memberpic{
-  height:180px;
+  object-fit :cover;
+  height:160px;
 }
 
+
+// 手風琴樣式清空
+  .accordion-button:focus {
+    box-shadow: none;
+  }
