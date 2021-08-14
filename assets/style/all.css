@@ -11586,12 +11586,12 @@ img {
   display: block;
 }
 
-.container {
-  padding: 32px;
-}
-
 .w-65 {
   width: 65%;
+}
+
+.w-60 {
+  width: 60%;
 }
 
 .w-40 {
@@ -11602,8 +11602,8 @@ img {
   padding-top: 12px;
 }
 
-.p-10 {
-  padding: 10px;
+.p-8 {
+  padding: 32px;
 }
 
 .mb-4-5 {
@@ -11644,6 +11644,8 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .userProfile .email {
@@ -11666,14 +11668,14 @@ img {
 }
 
 .ckeditor {
-  bottom: 50px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   width: 505px;
   z-index: 1;
 }
 
 .ckeditor .ck-editor__editable {
-  min-height: 340px;
+  min-height: 305px;
 }
 
 .editorBtnPosition {
@@ -11707,7 +11709,14 @@ img {
 }
 
 .memberpic {
-  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 160px;
+}
+
+.accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*# sourceMappingURL=all.css.map */
