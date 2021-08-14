@@ -11598,6 +11598,10 @@ img {
   width: 40%;
 }
 
+.w-10 {
+  width: 10%;
+}
+
 .pt-1-5 {
   padding-top: 12px;
 }
@@ -11715,6 +11719,21 @@ img {
 }
 
 .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-select {
+  cursor: pointer;
+  border: none;
+}
+
+.form-select:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
